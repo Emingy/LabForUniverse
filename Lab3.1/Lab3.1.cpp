@@ -204,9 +204,9 @@ int main() {
 		cout << "Min: " << min << endl;
 
 		double* manyMax = arr.manyMaxArray(data, sizeArray, 4);
-		arr.printArray(manyMax, 4);
+		cout << "MAX"; arr.printArray(manyMax, 4);
 		double* manyMin = arr.manyMinArray(data, sizeArray, 4);
-		arr.printArray(manyMin, 4);
+		cout << "MIN"; arr.printArray(manyMin, 4);
 
 	}
 	else {
