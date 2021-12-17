@@ -8,14 +8,23 @@ using namespace std;
 
 class Lab1{
 private: 
-	//DEFAULT CONFIG
 	int SIZE_ARR,
 		MAX_ARR,
 		MIN_ARR,
 		AFTER_DOT;
 	bool DOUBLE_TYPE_ARR;
-public:
 
+	bool setDefaultConfig() {
+		SIZE_ARR = 20;
+		MAX_ARR = 100;
+		MIN_ARR = -50;
+		AFTER_DOT = 4;
+		DOUBLE_TYPE_ARR = false;
+
+		return true;
+	}
+public:
+	bool setConf = setDefaultConfig();
 	// Func for setting config
 	bool setConfig(int newSize, int newMax, int newMin, int newAfterDot, bool newType) {
 		SIZE_ARR = newSize;
